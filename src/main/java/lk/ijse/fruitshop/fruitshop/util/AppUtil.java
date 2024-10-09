@@ -18,7 +18,16 @@ public class AppUtil {
     public static String createUserId(){
     return "User"+ UUID.randomUUID().toString();
     }
-//    encode-
+    public static String createCustomerId(){
+        return "Customer"+ UUID.randomUUID().toString();
+    }
+    public static String createItemCode(){
+        return "Item"+ UUID.randomUUID().toString();
+    }
+
+
+
+    //    encode-
 //    decode-
     public static String toBase64Profilepic(MultipartFile profilepic){
         String profilepicBase64=null;
