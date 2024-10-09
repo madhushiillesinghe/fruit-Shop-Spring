@@ -15,7 +15,7 @@ import org.springframework.web.multipart.MultipartFile;
 import java.util.List;
 
 @RestController
-@RequestMapping(value = "/customers")
+@RequestMapping(value = "api/v1/customers")
 public class CustomerController {
     @Autowired
     private CustomerService  customerService;

@@ -9,40 +9,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="702228d1-0dfe-469d-87f5-c6b04f3aea97" name="Changes" comment="customer and item servive created">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/fruitshop/fruitshop/controller/CustomerController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/fruitshop/fruitshop/controller/ItemController.java" afterDir="false" />
+    <list default="true" id="702228d1-0dfe-469d-87f5-c6b04f3aea97" name="Changes" comment="customer CRUD completed">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/fruitshop/fruitshop/AppInizializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/fruitshop/fruitshop/AppInizializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/fruitshop/fruitshop/config/WebAppRootConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/fruitshop/fruitshop/config/WebAppRootConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/fruitshop/fruitshop/controller/HealthTestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/fruitshop/fruitshop/controller/HealthTestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/fruitshop/fruitshop/controller/NoteController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/fruitshop/fruitshop/controller/UserController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/fruitshop/fruitshop/customObj/NoteErrorResponse.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/fruitshop/fruitshop/customObj/NoteResponse.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/fruitshop/fruitshop/customObj/UserErrorResponse.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/fruitshop/fruitshop/customObj/UserResponse.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/fruitshop/fruitshop/customObj/impl/ItemErrorResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/fruitshop/fruitshop/customObj/impl/ItemErrorResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/fruitshop/fruitshop/dao/CustomerDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/fruitshop/fruitshop/dao/CustomerDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/fruitshop/fruitshop/dao/ItemDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/fruitshop/fruitshop/dao/ItemDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/fruitshop/fruitshop/dao/NoteDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/fruitshop/fruitshop/dao/NoteDaoImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/fruitshop/fruitshop/dao/UserDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/fruitshop/fruitshop/dto/NoteDto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/fruitshop/fruitshop/dto/UserDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/fruitshop/fruitshop/entity/NoteEntity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/fruitshop/fruitshop/entity/UserEntity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/fruitshop/fruitshop/entity/impl/OrderDetailEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/fruitshop/fruitshop/entity/impl/OrderDetailEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/fruitshop/fruitshop/service/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/fruitshop/fruitshop/service/CustomerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/fruitshop/fruitshop/service/NoteService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/fruitshop/fruitshop/service/NoteServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/fruitshop/fruitshop/service/UserService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/fruitshop/fruitshop/service/UserServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/fruitshop/fruitshop/service/impl/CustomerServiceIMPL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/fruitshop/fruitshop/service/impl/CustomerServiceIMPL.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/fruitshop/fruitshop/service/impl/ItemServiceIMPL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/fruitshop/fruitshop/service/impl/ItemServiceIMPL.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/fruitshop/fruitshop/util/Mapping.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/fruitshop/fruitshop/util/Mapping.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/fruitshop/fruitshop/controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/fruitshop/fruitshop/controller/CustomerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/fruitshop/fruitshop/controller/ItemController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/fruitshop/fruitshop/controller/ItemController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -240,7 +210,7 @@
       <workItem from="1728400127277" duration="86000" />
       <workItem from="1728400631587" duration="27000" />
       <workItem from="1728401698573" duration="27000" />
-      <workItem from="1728478107944" duration="15353000" />
+      <workItem from="1728478107944" duration="16603000" />
     </task>
     <task id="LOCAL-00001" summary="customer and item servive created">
       <option name="closed" value="true" />
@@ -250,7 +220,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728487545779</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="customer CRUD completed">
+      <option name="closed" value="true" />
+      <created>1728495120671</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1728495120671</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -258,6 +236,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="customer and item servive created" />
-    <option name="LAST_COMMIT_MESSAGE" value="customer and item servive created" />
+    <MESSAGE value="customer CRUD completed" />
+    <option name="LAST_COMMIT_MESSAGE" value="customer CRUD completed" />
   </component>
 </project>

@@ -35,7 +35,7 @@ public class ItemServiceIMPL implements ItemService {
 
     @Override
     public void updateItem(String code, ItemDTO itemDTO) {
-        Optional<ItemEntity> updateById=itemDAO.findById(itemDTO.getCode());
+        Optional<ItemEntity> updateById=itemDAO.findById(code);
         if(!updateById.isPresent()){
             throw new ItemNotFoundException("Item not found");
         }else {
