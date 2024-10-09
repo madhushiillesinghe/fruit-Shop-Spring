@@ -3,7 +3,6 @@ package lk.ijse.fruitshop.fruitshop.entity.impl;
 import jakarta.persistence.*;
 import lk.ijse.fruitshop.fruitshop.embedded.OrderDetailPrimaryKey;
 import lk.ijse.fruitshop.fruitshop.entity.SuperEntity;
-import lk.ijse.fruitshop.fruitshop.entity.UserEntity;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

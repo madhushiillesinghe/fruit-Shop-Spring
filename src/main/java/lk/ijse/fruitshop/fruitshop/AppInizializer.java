@@ -20,7 +20,6 @@ public class AppInizializer extends AbstractAnnotationConfigDispatcherServletIni
     protected String[] getServletMappings() {
         return new String[]{"/"};
     }
-    //this time using location for
     @Override
     protected void customizeRegistration(ServletRegistration.Dynamic registration) {
         String tempDir = System.getProperty("java.io.tmpdir");

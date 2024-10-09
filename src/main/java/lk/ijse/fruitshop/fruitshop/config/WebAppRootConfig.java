@@ -45,6 +45,7 @@ public class WebAppRootConfig {
         factory.setJpaVendorAdapter(vendorAdapter);
         factory.setPackagesToScan("lk.ijse.fruitshop.fruitshop.entity");
         factory.setDataSource(dataSource());
+
         return factory;
     }
     @Bean

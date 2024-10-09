@@ -1,8 +1,6 @@
 package lk.ijse.fruitshop.fruitshop.service;
 
 import lk.ijse.fruitshop.fruitshop.customObj.CustomerResponse;
-import lk.ijse.fruitshop.fruitshop.customObj.NoteResponse;
-import lk.ijse.fruitshop.fruitshop.dto.NoteDto;
 import lk.ijse.fruitshop.fruitshop.dto.impl.CustomerDTO;
 
 import java.util.List;

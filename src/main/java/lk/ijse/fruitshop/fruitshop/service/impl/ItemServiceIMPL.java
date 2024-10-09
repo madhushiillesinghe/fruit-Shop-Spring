@@ -2,13 +2,9 @@ package lk.ijse.fruitshop.fruitshop.service.impl;
 
 import jakarta.transaction.Transactional;
 import lk.ijse.fruitshop.fruitshop.customObj.ItemResponse;
-import lk.ijse.fruitshop.fruitshop.customObj.UserErrorResponse;
 import lk.ijse.fruitshop.fruitshop.customObj.impl.ItemErrorResponse;
-import lk.ijse.fruitshop.fruitshop.dao.CustomerDAO;
 import lk.ijse.fruitshop.fruitshop.dao.ItemDAO;
 import lk.ijse.fruitshop.fruitshop.dto.impl.ItemDTO;
-import lk.ijse.fruitshop.fruitshop.entity.UserEntity;
-import lk.ijse.fruitshop.fruitshop.entity.impl.CustomerEntity;
 import lk.ijse.fruitshop.fruitshop.entity.impl.ItemEntity;
 import lk.ijse.fruitshop.fruitshop.exception.DataPersistFailedException;
 import lk.ijse.fruitshop.fruitshop.exception.ItemNotFoundException;
@@ -68,8 +64,8 @@ public class ItemServiceIMPL implements ItemService {
     @Override
     public ItemResponse getSelectItem(String code) {
         if(itemDAO.existsById(code)){
-            ItemEntity itemEntityByItemCode = itemDAO.getItemEntitiesByCode(code);
-            return mapping.convertToItemDTO(itemEntityByItemCode);
+            Optional<ItemEntity> itemEntityByItemCode = itemDAO.findById(code);
+            return mapping.convertToItemDTO(itemEntityByItemCode.get());
         }else {
             return new ItemErrorResponse(0, "Item not found");
         }

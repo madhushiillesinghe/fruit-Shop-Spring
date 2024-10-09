@@ -6,6 +6,7 @@ import lk.ijse.fruitshop.fruitshop.customObj.impl.CustomerErrorResponse;
 import lk.ijse.fruitshop.fruitshop.dao.CustomerDAO;
 import lk.ijse.fruitshop.fruitshop.dto.impl.CustomerDTO;
 import lk.ijse.fruitshop.fruitshop.entity.impl.CustomerEntity;
+import lk.ijse.fruitshop.fruitshop.exception.CustomerNotFound;
 import lk.ijse.fruitshop.fruitshop.exception.DataPersistFailedException;
 import lk.ijse.fruitshop.fruitshop.exception.ItemNotFoundException;
 import lk.ijse.fruitshop.fruitshop.service.CustomerService;
@@ -36,9 +37,9 @@ public class CustomerServiceIMPL implements CustomerService {
 
     @Override
     public void updateCustomer(String cusId, CustomerDTO customerDTO) {
-        Optional<CustomerEntity> updateById=customerDAO.findById(customerDTO.getId());
+        Optional<CustomerEntity> updateById=customerDAO.findById(cusId);
         if(!updateById.isPresent()){
-            throw new ItemNotFoundException("Customer not found");
+            throw new CustomerNotFound("Customer not found");
         }else {
             updateById.get().setName(customerDTO.getName());
             updateById.get().setAddress(customerDTO.getAddress());
@@ -65,8 +66,8 @@ public class CustomerServiceIMPL implements CustomerService {
     @Override
     public CustomerResponse getSelectCustomer(String cusId) {
         if(customerDAO.existsById(cusId)){
-            CustomerEntity customerEntityByCusId = customerDAO.getCusEntitiesByCusId(cusId);
-            return mapping.convertToCustomerDTO(customerEntityByCusId);
+            Optional<CustomerEntity> customerEntityByCusId = customerDAO.findById(cusId);
+            return mapping.convertToCustomerDTO(customerEntityByCusId.get());
         }else {
             return new CustomerErrorResponse(0, "User not found");
         }
