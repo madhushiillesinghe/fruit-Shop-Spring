@@ -3,8 +3,12 @@ package lk.ijse.fruitshop.fruitshop.util;
 
 import lk.ijse.fruitshop.fruitshop.dto.impl.CustomerDTO;
 import lk.ijse.fruitshop.fruitshop.dto.impl.ItemDTO;
+import lk.ijse.fruitshop.fruitshop.dto.impl.OrderDTO;
+import lk.ijse.fruitshop.fruitshop.dto.impl.OrderDetailDTO;
 import lk.ijse.fruitshop.fruitshop.entity.impl.CustomerEntity;
 import lk.ijse.fruitshop.fruitshop.entity.impl.ItemEntity;
+import lk.ijse.fruitshop.fruitshop.entity.impl.OrderDetailEntity;
+import lk.ijse.fruitshop.fruitshop.entity.impl.OrderEntity;
 import org.modelmapper.ModelMapper;
 import org.modelmapper.TypeToken;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -41,6 +45,28 @@ public class Mapping {
     }
     public List<ItemDTO> convertToItemDTO(List<ItemEntity> items){
         return modelMapper.map(items,new TypeToken<List<ItemDTO>>() {}.getType());
+    }
+
+//    order mapping
+    public OrderDTO convertToOrderDTO(OrderEntity order){
+    return modelMapper.map(order, OrderDTO.class);
+}
+    public OrderEntity convertToOrderEntity(OrderDTO dto) {
+        return modelMapper.map(dto, OrderEntity.class);
+    }
+    public List<OrderDTO> convertToOrderDTO(List<OrderEntity> order){
+        return modelMapper.map(order,new TypeToken<List<OrderDTO>>() {}.getType());
+    }
+//    order detail  mapping
+    public OrderDetailDTO convertToOrderDetailDTO(OrderDetailEntity orderDetail){
+    return modelMapper.map(orderDetail, OrderDetailDTO.class);
+}
+    public OrderDetailEntity convertToOrderDetailEntity(OrderDetailDTO dto) {
+        System.out.println(OrderDetailEntity.class + " At Mapper");
+        return modelMapper.map(dto, OrderDetailEntity.class);
+    }
+    public List<OrderDetailDTO> convertToOrderDetailDTO(List<OrderDetailEntity> orderDetail){
+        return modelMapper.map(orderDetail,new TypeToken<List<OrderDetailDTO>>() {}.getType());
     }
 
 }
