@@ -28,5 +28,4 @@ public class OrderDetailEntity implements SuperEntity {
     private double unitPrice;
     @EmbeddedId
     private OrderDetailPrimaryKey orderDetailPrimaryKey;
-
 }

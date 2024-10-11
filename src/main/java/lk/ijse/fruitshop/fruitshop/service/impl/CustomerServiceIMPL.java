@@ -44,7 +44,6 @@ public class CustomerServiceIMPL implements CustomerService {
             updateById.get().setName(customerDTO.getName());
             updateById.get().setAddress(customerDTO.getAddress());
             updateById.get().setSalary(customerDTO.getSalary());
-
         }
     }
 

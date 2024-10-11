@@ -2,14 +2,14 @@ package lk.ijse.fruitshop.fruitshop.controller;
 
 import lk.ijse.fruitshop.fruitshop.dto.impl.OrderDTO;
 import lk.ijse.fruitshop.fruitshop.exception.DataPersistFailedException;
-import lk.ijse.fruitshop.fruitshop.service.ItemService;
 import lk.ijse.fruitshop.fruitshop.service.PlaceOrderService;
-import lk.ijse.fruitshop.fruitshop.service.ServiceFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.util.List;
 
@@ -17,18 +17,19 @@ import java.util.List;
 @RequestMapping(value = "/api/v1/placeOrder")
 public class PlaceOrderController {
     @Autowired
-//    private PlaceOrderService placeOrderService;
-    PlaceOrderService placeOrderService= (PlaceOrderService) ServiceFactory.getServiceFactory().getService(ServiceFactory.ServiceType.PLACEORDER);
+    private PlaceOrderService placeOrderService;
+    static Logger logger = LoggerFactory.getLogger(PlaceOrderController.class);
 
     @PostMapping(consumes = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Void > createItem(@RequestBody OrderDTO buildorderDTO  ){
         try {
             placeOrderService.saveOrder(buildorderDTO);
+            logger.info("Order saved : " + buildorderDTO);
             return new ResponseEntity<>(HttpStatus.CREATED);
         }catch (DataPersistFailedException e){
             return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
         }catch (Exception e){
-            e.printStackTrace();
+            logger.error(e.getMessage());
             return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }
@@ -36,5 +37,4 @@ public class PlaceOrderController {
     public List<OrderDTO> getAllOrders(){
         return placeOrderService.getAllOrder();
     }
-
 }

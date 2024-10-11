@@ -22,10 +22,9 @@ public class Mapping {
     @Autowired
     private ModelMapper modelMapper;
 
-
 //    customer mapping
     public CustomerDTO convertToCustomerDTO(CustomerEntity customer){return modelMapper.map(customer, CustomerDTO.class);}
-    public CustomerEntity convertToCustomerEntity(CustomerDTO dto) {System.out.println(dto + " At Mapper");return modelMapper.map(dto, CustomerEntity.class);}
+    public CustomerEntity convertToCustomerEntity(CustomerDTO dto) {return modelMapper.map(dto, CustomerEntity.class);}
     public List<CustomerDTO> convertToCustomerDTO(List<CustomerEntity> customer){return modelMapper.map(customer,new TypeToken<List<CustomerDTO>>() {}.getType());}
 
 

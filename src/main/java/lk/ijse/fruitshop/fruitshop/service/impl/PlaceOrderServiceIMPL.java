@@ -53,17 +53,15 @@ public class PlaceOrderServiceIMPL implements PlaceOrderService {
                 OrderDetailEntity orderDetailEntity = mapping.convertToOrderDetailEntity(orderDetailDTO);
                 orderDetailEntity.setOrderDetailPrimaryKey(orderDetailPrimaryKey);
 
-
-
                 OrderDetailEntity saveOrderDetail=orderDetailDAO.save(orderDetailEntity);
                 if (saveOrderDetail == null && saveOrderDetail.getOrder().getOrderId() == null) {
                     throw new DataPersistFailedException();
-            }else {
-                        ItemEntity itemEntity=mapping.convertToItemEntity(itemDTO);
-                        itemEntity.setQuantity((item.get().getQuantity())-itemDTO.getQuantity());
-                        itemDAO.save(itemEntity);
+                }else {
+                    ItemEntity itemEntity=mapping.convertToItemEntity(itemDTO);
+                    itemEntity.setQuantity((item.get().getQuantity())-itemDTO.getQuantity());
+                    itemDAO.save(itemEntity);
                 }
-        }
+            }
         }
     }
     @Override
