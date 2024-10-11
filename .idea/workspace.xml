@@ -9,60 +9,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="702228d1-0dfe-469d-87f5-c6b04f3aea97" name="Changes" comment="item CRUD completed">
-      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/fruitshop/fruitshop/controller/PlaceOrderController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/fruitshop/fruitshop/customObj/OrderResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/fruitshop/fruitshop/customObj/impl/OrderErrorResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/fruitshop/fruitshop/dao/OrderDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/fruitshop/fruitshop/dao/OrderDetailDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/fruitshop/fruitshop/service/PlaceOrderService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/fruitshop/fruitshop/service/impl/PlaceOrderServiceIMPL.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0a99b554-722a-4e09-92f2-0afe7072931e.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0a99b554-722a-4e09-92f2-0afe7072931e/storage_v2/_src_/schema/fruits.346LtA.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0a99b554-722a-4e09-92f2-0afe7072931e/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0a99b554-722a-4e09-92f2-0afe7072931e/storage_v2/_src_/schema/mysql.osA4Bg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0a99b554-722a-4e09-92f2-0afe7072931e/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0a99b554-722a-4e09-92f2-0afe7072931e/storage_v2/_src_/schema/sys.zb4BAA.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/13204400-7abf-4674-a6c7-85d914d764b1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/13204400-7abf-4674-a6c7-85d914d764b1/storage_v2/_src_/schema/fruits.346LtA.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/13204400-7abf-4674-a6c7-85d914d764b1/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/13204400-7abf-4674-a6c7-85d914d764b1/storage_v2/_src_/schema/mysql.osA4Bg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/13204400-7abf-4674-a6c7-85d914d764b1/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/13204400-7abf-4674-a6c7-85d914d764b1/storage_v2/_src_/schema/sys.zb4BAA.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/28e224b6-5c2e-4ce6-b4ec-6bfcd9bc8a82.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/28e224b6-5c2e-4ce6-b4ec-6bfcd9bc8a82/storage_v2/_src_/schema/fruits.346LtA.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/28e224b6-5c2e-4ce6-b4ec-6bfcd9bc8a82/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/28e224b6-5c2e-4ce6-b4ec-6bfcd9bc8a82/storage_v2/_src_/schema/mysql.osA4Bg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/28e224b6-5c2e-4ce6-b4ec-6bfcd9bc8a82/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/28e224b6-5c2e-4ce6-b4ec-6bfcd9bc8a82/storage_v2/_src_/schema/sys.zb4BAA.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/59ed53a2-053c-442d-8a90-4294676c988d.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/59ed53a2-053c-442d-8a90-4294676c988d/storage_v2/_src_/schema/fruits.346LtA.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/59ed53a2-053c-442d-8a90-4294676c988d/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/59ed53a2-053c-442d-8a90-4294676c988d/storage_v2/_src_/schema/mysql.osA4Bg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/59ed53a2-053c-442d-8a90-4294676c988d/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/59ed53a2-053c-442d-8a90-4294676c988d/storage_v2/_src_/schema/sys.zb4BAA.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6443e689-74d4-43ad-a6cd-0d0004c65480.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6443e689-74d4-43ad-a6cd-0d0004c65480/storage_v2/_src_/schema/fruits.346LtA.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6443e689-74d4-43ad-a6cd-0d0004c65480/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6443e689-74d4-43ad-a6cd-0d0004c65480/storage_v2/_src_/schema/mysql.osA4Bg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6443e689-74d4-43ad-a6cd-0d0004c65480/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6443e689-74d4-43ad-a6cd-0d0004c65480/storage_v2/_src_/schema/sys.zb4BAA.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/7ae75ea0-44d1-4f65-bf6b-6f4866df6c2b.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/7ae75ea0-44d1-4f65-bf6b-6f4866df6c2b/storage_v2/_src_/schema/fruits.346LtA.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/7ae75ea0-44d1-4f65-bf6b-6f4866df6c2b/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/7ae75ea0-44d1-4f65-bf6b-6f4866df6c2b/storage_v2/_src_/schema/mysql.osA4Bg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/7ae75ea0-44d1-4f65-bf6b-6f4866df6c2b/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/7ae75ea0-44d1-4f65-bf6b-6f4866df6c2b/storage_v2/_src_/schema/sys.zb4BAA.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/bbad1e21-36b5-425e-9f72-82fe672c0c4f.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/bbad1e21-36b5-425e-9f72-82fe672c0c4f/storage_v2/_src_/schema/fruits.346LtA.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/bbad1e21-36b5-425e-9f72-82fe672c0c4f/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/bbad1e21-36b5-425e-9f72-82fe672c0c4f/storage_v2/_src_/schema/mysql.osA4Bg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/bbad1e21-36b5-425e-9f72-82fe672c0c4f/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/bbad1e21-36b5-425e-9f72-82fe672c0c4f/storage_v2/_src_/schema/sys.zb4BAA.meta" beforeDir="false" />
+    <list default="true" id="702228d1-0dfe-469d-87f5-c6b04f3aea97" name="Changes" comment="delete MIT license">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/fruitshop/fruitshop/util/AppUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/fruitshop/fruitshop/util/AppUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/fruitshop/fruitshop/util/Mapping.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/fruitshop/fruitshop/util/Mapping.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/fruitshop/fruitshop/service/impl/PlaceOrderServiceIMPL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/fruitshop/fruitshop/service/impl/PlaceOrderServiceIMPL.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,7 +60,6 @@
     &quot;Maven.fruitShop [clean].executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;Tomcat Server.Tomcat 10.1.241.executor&quot;: &quot;Run&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
@@ -262,7 +210,8 @@
       <workItem from="1728401698573" duration="27000" />
       <workItem from="1728478107944" duration="16815000" />
       <workItem from="1728529322363" duration="47000" />
-      <workItem from="1728578089006" duration="7779000" />
+      <workItem from="1728578089006" duration="10026000" />
+      <workItem from="1728619272818" duration="1398000" />
     </task>
     <task id="LOCAL-00001" summary="customer and item servive created">
       <option name="closed" value="true" />
@@ -288,7 +237,31 @@
       <option name="project" value="LOCAL" />
       <updated>1728496320102</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="saved place order and get all orders tested">
+      <option name="closed" value="true" />
+      <created>1728586287427</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1728586287427</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Add MIT license">
+      <option name="closed" value="true" />
+      <created>1728586724673</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1728586724673</updated>
+    </task>
+    <task id="LOCAL-00006" summary="delete MIT license">
+      <option name="closed" value="true" />
+      <created>1728586796703</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1728586796703</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -298,6 +271,9 @@
     <MESSAGE value="customer and item servive created" />
     <MESSAGE value="customer CRUD completed" />
     <MESSAGE value="item CRUD completed" />
-    <option name="LAST_COMMIT_MESSAGE" value="item CRUD completed" />
+    <MESSAGE value="saved place order and get all orders tested" />
+    <MESSAGE value="Add MIT license" />
+    <MESSAGE value="delete MIT license" />
+    <option name="LAST_COMMIT_MESSAGE" value="delete MIT license" />
   </component>
 </project>
