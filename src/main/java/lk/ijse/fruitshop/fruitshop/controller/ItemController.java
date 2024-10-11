@@ -7,7 +7,9 @@ import lk.ijse.fruitshop.fruitshop.dto.impl.ItemDTO;
 import lk.ijse.fruitshop.fruitshop.exception.CustomerNotFound;
 import lk.ijse.fruitshop.fruitshop.exception.DataPersistFailedException;
 import lk.ijse.fruitshop.fruitshop.exception.ItemNotFoundException;
+import lk.ijse.fruitshop.fruitshop.service.CustomerService;
 import lk.ijse.fruitshop.fruitshop.service.ItemService;
+import lk.ijse.fruitshop.fruitshop.service.ServiceFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
@@ -20,7 +22,8 @@ import java.util.List;
 @RequestMapping(value = "/api/v1/items")
 public class ItemController {
     @Autowired
-    private ItemService itemService;
+//    private ItemService itemService;
+    ItemService itemService= (ItemService) ServiceFactory.getServiceFactory().getService(ServiceFactory.ServiceType.ITEM);
 
     @PostMapping(consumes = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Void > createItem(@RequestBody ItemDTO buildItemDTO  ){

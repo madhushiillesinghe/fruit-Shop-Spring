@@ -5,6 +5,7 @@ import lk.ijse.fruitshop.fruitshop.dto.impl.CustomerDTO;
 import lk.ijse.fruitshop.fruitshop.exception.CustomerNotFound;
 import lk.ijse.fruitshop.fruitshop.exception.DataPersistFailedException;
 import lk.ijse.fruitshop.fruitshop.service.CustomerService;
+import lk.ijse.fruitshop.fruitshop.service.ServiceFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
@@ -18,7 +19,8 @@ import java.util.List;
 @RequestMapping(value = "api/v1/customers")
 public class CustomerController {
     @Autowired
-    private CustomerService  customerService;
+//    private CustomerService  customerService;
+    CustomerService customerService= (CustomerService) ServiceFactory.getServiceFactory().getService(ServiceFactory.ServiceType.CUSTOM);
 
     @PostMapping(consumes = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Void > createCustomer(@RequestBody CustomerDTO buildCustomerDTO  ){

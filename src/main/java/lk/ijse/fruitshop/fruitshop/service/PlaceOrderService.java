@@ -6,7 +6,7 @@ import java.sql.Connection;
 import java.sql.SQLException;
 import java.util.List;
 
-public interface PlaceOrderService {
+public interface PlaceOrderService extends SuperService{
     void saveOrder(OrderDTO orderDto);
     List<OrderDTO> getAllOrder();
 

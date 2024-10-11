@@ -7,7 +7,7 @@ import lk.ijse.fruitshop.fruitshop.dto.impl.ItemDTO;
 
 import java.util.List;
 
-public interface ItemService {
+public interface ItemService extends SuperService{
     void saveItem(ItemDTO itemDTO);
     void updateItem(String code,ItemDTO itemDTO);
     void deleteItem(String code);

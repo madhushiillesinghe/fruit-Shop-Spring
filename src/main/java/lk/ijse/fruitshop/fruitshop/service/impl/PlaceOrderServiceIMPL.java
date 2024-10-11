@@ -41,6 +41,7 @@ public class PlaceOrderServiceIMPL implements PlaceOrderService {
             throw new DataPersistFailedException("Can not place the order");
         }else {
             for (ItemDTO itemDTO:orderDto.getItemDtoList()){
+                Optional<ItemEntity> item=itemDAO.findById((itemDTO.getCode()));
 
                 OrderDetailDTO orderDetailDTO=new OrderDetailDTO();
                 orderDetailDTO.setOrderId(orderDto.getOrderId());
@@ -52,12 +53,13 @@ public class PlaceOrderServiceIMPL implements PlaceOrderService {
                 OrderDetailEntity orderDetailEntity = mapping.convertToOrderDetailEntity(orderDetailDTO);
                 orderDetailEntity.setOrderDetailPrimaryKey(orderDetailPrimaryKey);
 
+
+
                 OrderDetailEntity saveOrderDetail=orderDetailDAO.save(orderDetailEntity);
                 if (saveOrderDetail == null && saveOrderDetail.getOrder().getOrderId() == null) {
                     throw new DataPersistFailedException();
             }else {
                         ItemEntity itemEntity=mapping.convertToItemEntity(itemDTO);
-                        Optional<ItemEntity> item=itemDAO.findById((itemDTO.getCode()));
                         itemEntity.setQuantity((item.get().getQuantity())-itemDTO.getQuantity());
                         itemDAO.save(itemEntity);
                 }

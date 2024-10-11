@@ -10,13 +10,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="702228d1-0dfe-469d-87f5-c6b04f3aea97" name="Changes" comment="transaction completed">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/fruitshop/fruitshop/service/ServiceFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/fruitshop/fruitshop/service/SuperService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/fruitshop/fruitshop/embedded/OrderDetailPrimaryKey.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/fruitshop/fruitshop/embedded/OrderDetailPrimaryKey.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/fruitshop/fruitshop/entity/impl/OrderDetailEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/fruitshop/fruitshop/entity/impl/OrderDetailEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/fruitshop/fruitshop/entity/impl/OrderEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/fruitshop/fruitshop/entity/impl/OrderEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/fruitshop/fruitshop/controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/fruitshop/fruitshop/controller/CustomerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/fruitshop/fruitshop/controller/HealthTestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/fruitshop/fruitshop/controller/HealthTestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/fruitshop/fruitshop/controller/ItemController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/fruitshop/fruitshop/controller/ItemController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/fruitshop/fruitshop/controller/PlaceOrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/fruitshop/fruitshop/controller/PlaceOrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/fruitshop/fruitshop/service/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/fruitshop/fruitshop/service/CustomerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/fruitshop/fruitshop/service/ItemService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/fruitshop/fruitshop/service/ItemService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/fruitshop/fruitshop/service/PlaceOrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/fruitshop/fruitshop/service/PlaceOrderService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/fruitshop/fruitshop/service/impl/PlaceOrderServiceIMPL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/fruitshop/fruitshop/service/impl/PlaceOrderServiceIMPL.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/fruitshop/fruitshop/util/Mapping.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/fruitshop/fruitshop/util/Mapping.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,31 +63,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Maven.fruitShop [clean,install].executor": "Run",
-    "Maven.fruitShop [clean].executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Tomcat Server.Tomcat 10.1.241.executor": "Run",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Asus/OneDrive/Documents/AAD Module/fruitShop/src/main/java/lk/ijse/fruitshop/fruitshop",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Maven.fruitShop [clean,install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.fruitShop [clean].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Tomcat Server.Tomcat 10.1.241.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Asus/OneDrive/Documents/AAD Module/fruitShop/src/main/java/lk/ijse/fruitshop/fruitshop&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="lk.ijse.fruitshop.fruitshop.customObj" />
@@ -93,6 +97,8 @@
       <recent name="C:\Users\Asus\OneDrive\Documents\AAD Module\fruitShop\src\main\java\lk\ijse\fruitshop\fruitshop" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="lk.ijse.fruitshop.fruitshop.dao" />
+      <recent name="lk.ijse.fruitshop.fruitshop.service" />
       <recent name="lk.ijse.fruitshop.fruitshop.dto.impl" />
       <recent name="lk.ijse.fruitshop.fruitshop.embedded" />
     </key>
@@ -219,7 +225,8 @@
       <workItem from="1728578089006" duration="10026000" />
       <workItem from="1728619272818" duration="1603000" />
       <workItem from="1728622054770" duration="97000" />
-      <workItem from="1728622473781" duration="4301000" />
+      <workItem from="1728622473781" duration="4551000" />
+      <workItem from="1728640313597" duration="2377000" />
     </task>
     <task id="LOCAL-00001" summary="customer and item servive created">
       <option name="closed" value="true" />
@@ -277,7 +284,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728620855763</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="transaction completed">
+      <option name="closed" value="true" />
+      <created>1728627003785</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1728627003785</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

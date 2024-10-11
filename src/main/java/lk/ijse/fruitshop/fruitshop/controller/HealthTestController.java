@@ -10,6 +10,6 @@ import org.springframework.web.bind.annotation.RestController;
 public class HealthTestController {
     @GetMapping
     public String healthCheck(){
-        return "nfruits shop is running";
+        return "fruits shop is running";
     }
 }
