@@ -24,16 +24,9 @@ public class Mapping {
 
 
 //    customer mapping
-    public CustomerDTO convertToCustomerDTO(CustomerEntity customer){
-        return modelMapper.map(customer, CustomerDTO.class);
-    }
-    public CustomerEntity convertToCustomerEntity(CustomerDTO dto) {
-        System.out.println(dto + " At Mapper");
-        return modelMapper.map(dto, CustomerEntity.class);
-    }
-    public List<CustomerDTO> convertToCustomerDTO(List<CustomerEntity> customer){
-        return modelMapper.map(customer,new TypeToken<List<CustomerDTO>>() {}.getType());
-    }
+    public CustomerDTO convertToCustomerDTO(CustomerEntity customer){return modelMapper.map(customer, CustomerDTO.class);}
+    public CustomerEntity convertToCustomerEntity(CustomerDTO dto) {System.out.println(dto + " At Mapper");return modelMapper.map(dto, CustomerEntity.class);}
+    public List<CustomerDTO> convertToCustomerDTO(List<CustomerEntity> customer){return modelMapper.map(customer,new TypeToken<List<CustomerDTO>>() {}.getType());}
 
 
 //    item mapping
@@ -43,30 +36,14 @@ public class Mapping {
     public ItemEntity convertToItemEntity(ItemDTO dto) {
         return modelMapper.map(dto, ItemEntity.class);
     }
-    public List<ItemDTO> convertToItemDTO(List<ItemEntity> items){
-        return modelMapper.map(items,new TypeToken<List<ItemDTO>>() {}.getType());
-    }
+    public List<ItemDTO> convertToItemDTO(List<ItemEntity> items){return modelMapper.map(items,new TypeToken<List<ItemDTO>>() {}.getType());}
 
 //    order mapping
-    public OrderDTO convertToOrderDTO(OrderEntity order){
-    return modelMapper.map(order, OrderDTO.class);
-}
     public OrderEntity convertToOrderEntity(OrderDTO dto) {
-        return modelMapper.map(dto, OrderEntity.class);
-    }
-    public List<OrderDTO> convertToOrderDTO(List<OrderEntity> order){
-        return modelMapper.map(order,new TypeToken<List<OrderDTO>>() {}.getType());
-    }
+        return modelMapper.map(dto, OrderEntity.class);}
+    public List<OrderDTO> convertToOrderDTO(List<OrderEntity> ordersEntity){return modelMapper.map(ordersEntity,new TypeToken<List<OrderDTO>>() {}.getType());}
+
 //    order detail  mapping
-    public OrderDetailDTO convertToOrderDetailDTO(OrderDetailEntity orderDetail){
-    return modelMapper.map(orderDetail, OrderDetailDTO.class);
-}
-    public OrderDetailEntity convertToOrderDetailEntity(OrderDetailDTO dto) {
-        System.out.println(OrderDetailEntity.class + " At Mapper");
-        return modelMapper.map(dto, OrderDetailEntity.class);
-    }
-    public List<OrderDetailDTO> convertToOrderDetailDTO(List<OrderDetailEntity> orderDetail){
-        return modelMapper.map(orderDetail,new TypeToken<List<OrderDetailDTO>>() {}.getType());
-    }
+    public OrderDetailEntity convertToOrderDetailEntity(OrderDetailDTO dto) {return modelMapper.map(dto, OrderDetailEntity.class);}
 
 }

@@ -15,17 +15,17 @@ import lombok.NoArgsConstructor;
 public class OrderDetailEntity implements SuperEntity {
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "order_id",referencedColumnName = "order_id",
+    @JoinColumn(name = "orderId",referencedColumnName = "orderId",
             insertable = false,
             updatable = false)
     private OrderEntity order;
-    private  int qty;
+    private  int order_qty;
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "code",referencedColumnName = "code",
             insertable = false,
             updatable = false)
     private ItemEntity item;
-    private double unit_price;
+    private double unitPrice;
     @EmbeddedId
     private OrderDetailPrimaryKey orderDetailPrimaryKey;
 

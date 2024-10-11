@@ -14,8 +14,7 @@ import java.io.Serializable;
 @Data
 @Embeddable
 public class OrderDetailPrimaryKey implements Serializable {
-    private String order_id;
+    private String orderId;
     private String code;
-
 
 }

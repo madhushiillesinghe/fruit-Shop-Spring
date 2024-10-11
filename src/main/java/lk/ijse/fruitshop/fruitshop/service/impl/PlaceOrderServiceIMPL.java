@@ -36,9 +36,8 @@ public class PlaceOrderServiceIMPL implements PlaceOrderService {
     public void saveOrder(OrderDTO orderDto) {
         orderDto.setOrderId(AppUtil.createOrderId());
         OrderEntity orderEntity = mapping.convertToOrderEntity(orderDto);
-        orderEntity.setOrder_id(orderDto.getOrderId());
         OrderEntity orderSave=orderDAO.save(orderEntity);
-        if (orderSave == null && orderSave.getOrder_id() == null) {
+        if (orderSave == null && orderSave.getOrderId() == null) {
             throw new DataPersistFailedException("Can not place the order");
         }else {
             for (ItemDTO itemDTO:orderDto.getItemDtoList()){
@@ -51,15 +50,10 @@ public class PlaceOrderServiceIMPL implements PlaceOrderService {
 
                 OrderDetailPrimaryKey orderDetailPrimaryKey=new OrderDetailPrimaryKey(orderDto.getOrderId(),itemDTO.getCode());
                 OrderDetailEntity orderDetailEntity = mapping.convertToOrderDetailEntity(orderDetailDTO);
-
                 orderDetailEntity.setOrderDetailPrimaryKey(orderDetailPrimaryKey);
-                orderDetailEntity.setUnit_price(itemDTO.getPrice());
-                orderDetailEntity.setQty(itemDTO.getQuantity());
-                orderDetailEntity.setUnit_price(itemDTO.getPrice());
-
 
                 OrderDetailEntity saveOrderDetail=orderDetailDAO.save(orderDetailEntity);
-                if (saveOrderDetail == null && saveOrderDetail.getOrder().getOrder_id() == null) {
+                if (saveOrderDetail == null && saveOrderDetail.getOrder().getOrderId() == null) {
                     throw new DataPersistFailedException();
             }else {
                         ItemEntity itemEntity=mapping.convertToItemEntity(itemDTO);
@@ -67,13 +61,13 @@ public class PlaceOrderServiceIMPL implements PlaceOrderService {
                         itemEntity.setQuantity((item.get().getQuantity())-itemDTO.getQuantity());
                         itemDAO.save(itemEntity);
                 }
-
         }
         }
     }
     @Override
     public List<OrderDTO> getAllOrder() {
-        return  mapping.convertToOrderDTO(orderDAO.findAll());
+        List<OrderDTO> orderDTOS = mapping.convertToOrderDTO(orderDAO.findAll());
+        return orderDTOS;
 
     }
 }
