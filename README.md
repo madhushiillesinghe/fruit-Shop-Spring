@@ -58,7 +58,7 @@ This project maintains a well-defined **layered architecture**, consisting of th
 
 ## API Documentation
 
-You can view the detailed API documentation with example requests and responses [here](https://documenter.getpostman.com/view/35385949/2sAXxS7Azd](https://documenter.getpostman.com/view/35385949/2sAXxS7Azd)).
+You can view the detailed API documentation with example requests and responses [here]([https://documenter.getpostman.com/view/35385949/2sAXxS7Azd](https://documenter.getpostman.com/view/35385949/2sAXxS7Azd](https://documenter.getpostman.com/view/35385949/2sAXxS7Azd))).
 ## 🛡️ License:
 This project is licensed under the MIT License - see the LICENSE file for details.
 
