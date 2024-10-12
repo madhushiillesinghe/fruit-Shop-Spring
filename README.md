@@ -8,11 +8,12 @@ The system is designed to provide a scalable and maintainable solution, followin
 
 ## Key Features:
 - **Inventory Management**: CRUD operations for managing products.
-- **Sales **: Create customer orders .
+- **Sales**: Create Customer Orders.
 - **Customer Management**: Add and manage customer profiles.
 - **Logging**: Integrated logging for tracking events and debugging.
 - **Layered Architecture**: Clear separation between presentation, business logic, and data layers.
 - **REST API with JSON responses.**
+- **Exception handling and validation using Spring Validator**.
 
 ## Technologies Used:
 - **Backend**: Spring java framework, Spring Data JPA, Hibernate
