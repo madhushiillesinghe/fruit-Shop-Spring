@@ -1,5 +1,6 @@
 package lk.ijse.fruitshop.fruitshop.controller;
 
+import jakarta.validation.Valid;
 import lk.ijse.fruitshop.fruitshop.customObj.ItemResponse;
 import lk.ijse.fruitshop.fruitshop.dto.impl.ItemDTO;
 import lk.ijse.fruitshop.fruitshop.exception.DataPersistFailedException;
@@ -23,7 +24,7 @@ public class ItemController {
     static Logger logger = LoggerFactory.getLogger(ItemController.class);
 
     @PostMapping(consumes = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<Void > createItem(@RequestBody ItemDTO buildItemDTO  ){
+    public ResponseEntity<Void > createItem(@Valid @RequestBody ItemDTO buildItemDTO  ){
         try {
             itemService.saveItem(buildItemDTO);
             logger.info("Item saved : " + buildItemDTO);
@@ -37,7 +38,7 @@ public class ItemController {
     }
 
     @PutMapping(value = "/{code}",consumes = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<Void>  updateItem(@PathVariable ("code") String code,@RequestBody ItemDTO updateItemdto) {
+    public ResponseEntity<Void>  updateItem(@Valid @PathVariable ("code") String code,@RequestBody ItemDTO updateItemdto) {
         try {
             itemService.updateItem(code,updateItemdto);
             logger.info("Item updated : " + updateItemdto);

@@ -1,5 +1,6 @@
 package lk.ijse.fruitshop.fruitshop.controller;
 
+import jakarta.validation.Valid;
 import lk.ijse.fruitshop.fruitshop.dto.impl.OrderDTO;
 import lk.ijse.fruitshop.fruitshop.exception.DataPersistFailedException;
 import lk.ijse.fruitshop.fruitshop.service.PlaceOrderService;
@@ -21,7 +22,7 @@ public class PlaceOrderController {
     static Logger logger = LoggerFactory.getLogger(PlaceOrderController.class);
 
     @PostMapping(consumes = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<Void > createItem(@RequestBody OrderDTO buildorderDTO  ){
+    public ResponseEntity<Void > createItem(@Valid @RequestBody OrderDTO buildorderDTO  ){
         try {
             placeOrderService.saveOrder(buildorderDTO);
             logger.info("Order saved : " + buildorderDTO);

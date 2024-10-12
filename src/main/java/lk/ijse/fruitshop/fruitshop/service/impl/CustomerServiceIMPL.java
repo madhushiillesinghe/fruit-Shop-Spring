@@ -12,6 +12,7 @@ import lk.ijse.fruitshop.fruitshop.exception.ItemNotFoundException;
 import lk.ijse.fruitshop.fruitshop.service.CustomerService;
 import lk.ijse.fruitshop.fruitshop.util.AppUtil;
 import lk.ijse.fruitshop.fruitshop.util.Mapping;
+import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

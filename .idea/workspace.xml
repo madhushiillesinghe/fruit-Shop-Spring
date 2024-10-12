@@ -9,29 +9,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="702228d1-0dfe-469d-87f5-c6b04f3aea97" name="Changes" comment="Service factory created">
-      <change afterPath="$PROJECT_DIR$/app.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/logback.xml" afterDir="false" />
+    <list default="true" id="702228d1-0dfe-469d-87f5-c6b04f3aea97" name="Changes" comment="Add loggers">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.log" beforeDir="false" afterPath="$PROJECT_DIR$/app.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/fruitshop/fruitshop/controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/fruitshop/fruitshop/controller/CustomerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/fruitshop/fruitshop/controller/HealthTestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/fruitshop/fruitshop/controller/HealthTestController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/fruitshop/fruitshop/controller/ItemController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/fruitshop/fruitshop/controller/ItemController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/fruitshop/fruitshop/controller/PlaceOrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/fruitshop/fruitshop/controller/PlaceOrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/fruitshop/fruitshop/dao/OrderDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/fruitshop/fruitshop/dao/OrderDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/fruitshop/fruitshop/embedded/OrderDetailPrimaryKey.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/fruitshop/fruitshop/embedded/OrderDetailPrimaryKey.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/fruitshop/fruitshop/entity/impl/OrderDetailEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/fruitshop/fruitshop/entity/impl/OrderDetailEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/fruitshop/fruitshop/exception/CustomerNotFound.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/fruitshop/fruitshop/exception/CustomerNotFound.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/fruitshop/fruitshop/exception/DataPersistFailedException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/fruitshop/fruitshop/exception/DataPersistFailedException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/fruitshop/fruitshop/exception/ItemNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/fruitshop/fruitshop/exception/ItemNotFoundException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/fruitshop/fruitshop/service/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/fruitshop/fruitshop/service/CustomerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/fruitshop/fruitshop/service/ItemService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/fruitshop/fruitshop/service/ItemService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/fruitshop/fruitshop/service/PlaceOrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/fruitshop/fruitshop/service/PlaceOrderService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/fruitshop/fruitshop/service/ServiceFactory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/fruitshop/fruitshop/service/SuperService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/fruitshop/fruitshop/dto/impl/CustomerDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/fruitshop/fruitshop/dto/impl/CustomerDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/fruitshop/fruitshop/dto/impl/ItemDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/fruitshop/fruitshop/dto/impl/ItemDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/fruitshop/fruitshop/dto/impl/OrderDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/fruitshop/fruitshop/dto/impl/OrderDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/fruitshop/fruitshop/dto/impl/OrderDetailDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/fruitshop/fruitshop/dto/impl/OrderDetailDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/fruitshop/fruitshop/service/impl/CustomerServiceIMPL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/fruitshop/fruitshop/service/impl/CustomerServiceIMPL.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/fruitshop/fruitshop/service/impl/PlaceOrderServiceIMPL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/fruitshop/fruitshop/service/impl/PlaceOrderServiceIMPL.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/fruitshop/fruitshop/util/Mapping.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/fruitshop/fruitshop/util/Mapping.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,6 +44,9 @@
     <option name="FILTER_INFO" value="true" />
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -244,7 +236,11 @@
       <workItem from="1728622473781" duration="4551000" />
       <workItem from="1728640313597" duration="5402000" />
       <workItem from="1728645757914" duration="613000" />
-      <workItem from="1728646396365" duration="708000" />
+      <workItem from="1728646396365" duration="2635000" />
+      <workItem from="1728736616976" duration="633000" />
+      <workItem from="1728737392101" duration="62000" />
+      <workItem from="1728737470409" duration="32000" />
+      <workItem from="1728737596201" duration="861000" />
     </task>
     <task id="LOCAL-00001" summary="customer and item servive created">
       <option name="closed" value="true" />
@@ -318,7 +314,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728642821744</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Add loggers">
+      <option name="closed" value="true" />
+      <created>1728647525302</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1728647525302</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -334,6 +338,7 @@
     <MESSAGE value="delete MIT license" />
     <MESSAGE value="transaction completed" />
     <MESSAGE value="Service factory created" />
-    <option name="LAST_COMMIT_MESSAGE" value="Service factory created" />
+    <MESSAGE value="Add loggers" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add loggers" />
   </component>
 </project>

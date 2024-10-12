@@ -1,5 +1,6 @@
 package lk.ijse.fruitshop.fruitshop.controller;
 
+import jakarta.validation.Valid;
 import lk.ijse.fruitshop.fruitshop.customObj.CustomerResponse;
 import lk.ijse.fruitshop.fruitshop.dto.impl.CustomerDTO;
 import lk.ijse.fruitshop.fruitshop.exception.CustomerNotFound;
@@ -21,7 +22,7 @@ public class CustomerController {
     private CustomerService  customerService;
     static Logger logger = LoggerFactory.getLogger(CustomerController.class);
     @PostMapping(consumes = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<Void > createCustomer(@RequestBody CustomerDTO buildCustomerDTO  ){
+    public ResponseEntity<Void > createCustomer(@Valid @RequestBody CustomerDTO buildCustomerDTO  ){
         try {
             customerService.saveCustomer(buildCustomerDTO);
             logger.info("Customer saved : " + buildCustomerDTO);
@@ -35,7 +36,7 @@ public class CustomerController {
     }
 
     @PutMapping(value = "/{cusId}",consumes = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<Void>  updateCustomer(@PathVariable ("cusId") String cusId,@RequestBody CustomerDTO updateCustomerdto) {
+    public ResponseEntity<Void>  updateCustomer(@Valid @PathVariable ("cusId") String cusId,@RequestBody CustomerDTO updateCustomerdto) {
         try {
             customerService.updateCustomer(cusId,updateCustomerdto);
             logger.info("Customer updated : " + updateCustomerdto);
