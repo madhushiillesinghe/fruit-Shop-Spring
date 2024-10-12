@@ -13,7 +13,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.util.List;
-
+@CrossOrigin(origins = "*" ,allowedHeaders ="*" )
 @RestController
 @RequestMapping(value = "/api/v1/placeOrder")
 public class PlaceOrderController {
